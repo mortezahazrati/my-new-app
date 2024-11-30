@@ -20,12 +20,12 @@ export function NavMenu() {
   return (
     <header>
       <Navbar
-        className="navbar-expand-sm navbar-toggleable-sm ng-white border-bottom box-shadow mb-3"
+        className="navbar-expand-sm navbar-toggleable-sm ng-white border-bottom box-shadow mb-3 navbar-dark bg-primary"
         container
         light
       >
         <NavbarBrand tag={Link} to="/">
-          my_new_app
+          My application
         </NavbarBrand>
         <NavbarToggler onClick={toggleNavbar} className="mr-2" />
         <Collapse
@@ -35,17 +35,17 @@ export function NavMenu() {
         >
           <ul className="navbar-nav flex-grow">
             <NavItem>
-              <NavLink tag={Link} className="text-dark" to="/">
+              <NavLink tag={Link} to="/">
                 Home
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink tag={Link} className="text-dark" to="/counter">
+              <NavLink tag={Link} to="/counter">
                 Counter
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink tag={Link} className="text-dark" to="/fetch-data">
+              <NavLink tag={Link} to="/fetch-data">
                 Fetch data
               </NavLink>
             </NavItem>
